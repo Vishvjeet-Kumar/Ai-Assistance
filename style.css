@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-image: url('./Ai1.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+.container {
+    padding: 20px;
+    position: absolute;
+    left: 37%;
+    background-color: rgba(240, 7, 7, 0.623);
+    border-radius: 10px;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 15px rgb(206, 208, 211) ;
+
+}
+
+h1 {
+    font-size: 35px;
+    font-family: "Roboto";
+    text-shadow: 0px 0px 8px black;
+
+
+}
+
+p {
+    color: rgb(3, 238, 255);
+    font-size: 15px;
+    text-shadow: 0px 0px 5px black;
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    color: #fff;
+    background-color: #17bd1d;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+    box-shadow: 0px 0px 15px rgb(0, 89, 255) ;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+.listening {
+    animation: pulse 1s infinite;
+    background-color: #FF6347;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
